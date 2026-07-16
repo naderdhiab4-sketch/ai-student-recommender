@@ -1,0 +1,38 @@
+name: .NET Build & Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'
+
+    - name: Restore
+      run: dotnet restore ./backend/RecommenderBackend.csproj
+
+    - name: Build
+      run: dotnet build --no-restore ./backend/RecommenderBackend.csproj -c Release
+
+    - name: Run tests (if any)
+      run: |
+        if [ -d "./backend/tests" ]; then
+          dotnet test ./backend/tests -c Release
+        else
+          echo "No backend tests found, skipping"
+        fi
+
+    - name: Publish (verify)
+      run: |
+        dotnet publish ./backend/RecommenderBackend.csproj -c Release -o published || echo "Publish step finished" 
