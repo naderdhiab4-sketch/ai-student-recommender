@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "مبادئ البرمجة - Lecture Video",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=example1",
+    "language": "ar",
+    "tags": ["programming", "intro", "course1"],
+    "short_description_ar": "فيديو تمهيدي عن أساسيات البرمجة مناسب للمستوى الأول.",
+    "short_description_en": "Introductory video on programming basics.",
+    "source": "YouTube"
+  },
+  {
+    "id": 2,
+    "title": "Data Structures - Lecture Notes",
+    "type": "article",
+    "url": "https://example.com/ds-notes",
+    "language": "en",
+    "tags": ["data-structures", "algorithms"],
+    "short_description_ar": "ملاحظات محاضرات هياكل البيانات (ترجمة موجزة متاحة).",
+    "short_description_en": "Lecture notes for data structures.",
+    "source": "Website"
+  },
+  {
+    "id": 3,
+    "title": "Machine Learning Crash Course",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=example-ml",
+    "language": "en",
+    "tags": ["ml", "intro", "course"],
+    "short_description_ar": "دورة سريعة لمبادئ تعلم الآلة.",
+    "short_description_en": "A crash course on machine learning basics.",
+    "source": "YouTube"
+  },
+  {
+    "id": 4,
+    "title": "كيفية كتابة تقرير التكليف - دليل عربي",
+    "type": "article",
+    "url": "https://example.com/ar/report-guide",
+    "language": "ar",
+    "tags": ["academic", "writing"],
+    "short_description_ar": "دليل عملي لكتابة التقارير الأكاديمية باللغة العربية.",
+    "short_description_en": "Guide to academic report writing (Arabic).",
+    "source": "Website"
+  },
+  {
+    "id": 5,
+    "title": "Git & GitHub Crash Course",
+    "type": "video",
+    "url": "https://www.youtube.com/watch?v=example-git",
+    "language": "en",
+    "tags": ["git", "tools"],
+    "short_description_ar": "مقدمة عملية عن Git وGitHub.",
+    "short_description_en": "Practical introduction to Git and GitHub.",
+    "source": "YouTube"
+  }
+]
